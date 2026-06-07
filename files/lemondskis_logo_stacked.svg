@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 570" role="img" aria-labelledby="title">
+  <title id="title">Lemonski's Tours, ride with a local</title>
+  <path d="M22 306 167 84l76 108L327 35l207 271Z" fill="#AFA9EC"/>
+  <path d="M83 306 242 64l88 128 72-106 162 220Z" fill="#534AB7"/>
+  <path d="m177 306 153-271 164 271Z" fill="#1A1340"/>
+  <path d="m310 70 20-35 22 37Z" fill="#EF9F27"/>
+  <path d="M0 284h600v78H0Z" fill="#1A1340"/>
+  <path d="M274 362c11-45 31-69 62-72 26-2 46 9 57 34-37 1-63 13-78 38Z" fill="#EF9F27"/>
+  <path d="m23 286 34-78 34 78Zm62 0 41-103 41 103Zm383 0 38-96 38 96Zm76 0 29-70 29 70Z" fill="#26215C"/>
+  <text x="300" y="445" text-anchor="middle" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="900" letter-spacing="2">LEMONSKI'S</text>
+  <text x="300" y="493" text-anchor="middle" fill="#D3D1C7" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="17">TOURS</text>
+  <path d="M96 513h408" stroke="#AFA9EC" stroke-width="2" opacity=".55"/>
+  <text x="300" y="548" text-anchor="middle" fill="#EF9F27" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing="7">RIDE WITH A LOCAL</text>
+</svg>

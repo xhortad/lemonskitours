@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2.25in" height="3.75in" viewBox="0 0 675 1125" role="img" aria-labelledby="title desc">
+  <title id="title">Lemonski Tours business card back</title>
+  <desc id="desc">Contact side explaining that customers rent locally, add a guided tour, and drive their rented buggy.</desc>
+
+  <!-- 0.125 in bleed is included. Replace the uppercase placeholder text before printing. -->
+  <rect width="675" height="1125" fill="#F1EFE8"/>
+  <path d="M0 0h675v245L0 410Z" fill="#26215C"/>
+  <path d="M0 310 675 145v54L0 364Z" fill="#534AB7"/>
+  <path d="M0 356 675 191v22L0 378Z" fill="#EF9F27"/>
+
+  <image x="42" y="35" width="570" height="187"
+         href="../logo-concepts/recommended-horizontal.png"/>
+
+  <!-- EDIT: contact name and title -->
+  <text x="62" y="477" fill="#3C3489" font-family="Arial, Helvetica, sans-serif"
+        font-size="43" font-weight="900" letter-spacing=".5">JAMES LEEMAN</text>
+  <text x="64" y="515" fill="#BA7517" font-family="Arial, Helvetica, sans-serif"
+        font-size="16" font-weight="800" letter-spacing="4">OWNER · LOCAL TRAIL GUIDE</text>
+
+  <path d="M62 557h551" stroke="#D3D1C7" stroke-width="2"/>
+
+  <!-- EDIT: phone -->
+  <g transform="translate(64 606)">
+    <circle cx="22" cy="22" r="22" fill="#EEEDFE"/>
+    <path d="M14 11c4 13 9 18 19 23l7-7-8-5-4 4c-5-3-8-6-10-11l4-3-5-8Z"
+          transform="scale(.72) translate(10 8)" fill="#3C3489"/>
+    <text x="62" y="17" fill="#888780" font-family="Arial, Helvetica, sans-serif"
+          font-size="11" font-weight="700" letter-spacing="3">CALL OR TEXT</text>
+    <text x="62" y="44" fill="#26215C" font-family="Arial, Helvetica, sans-serif"
+          font-size="22" font-weight="700">603-703-3164</text>
+  </g>
+
+  <!-- EDIT: email -->
+  <g transform="translate(64 701)">
+    <circle cx="22" cy="22" r="22" fill="#EEEDFE"/>
+    <rect x="10" y="14" width="24" height="17" rx="2" fill="none" stroke="#3C3489" stroke-width="2"/>
+    <path d="m11 16 11 8 11-8" fill="none" stroke="#3C3489" stroke-width="2"/>
+    <text x="62" y="17" fill="#888780" font-family="Arial, Helvetica, sans-serif"
+          font-size="11" font-weight="700" letter-spacing="3">EMAIL</text>
+    <text x="62" y="44" fill="#26215C" font-family="Arial, Helvetica, sans-serif"
+          font-size="22" font-weight="700">lemonskitours@gmail.com</text>
+  </g>
+
+  <!-- EDIT: website -->
+  <g transform="translate(64 796)">
+    <circle cx="22" cy="22" r="22" fill="#EEEDFE"/>
+    <circle cx="22" cy="22" r="12" fill="none" stroke="#3C3489" stroke-width="2"/>
+    <path d="M10 22h24M22 10c5 6 5 18 0 24M22 10c-5 6-5 18 0 24" fill="none" stroke="#3C3489" stroke-width="1.5"/>
+    <text x="62" y="17" fill="#888780" font-family="Arial, Helvetica, sans-serif"
+          font-size="11" font-weight="700" letter-spacing="3">PLAN YOUR RIDE</text>
+    <text x="62" y="44" fill="#26215C" font-family="Arial, Helvetica, sans-serif"
+          font-size="22" font-weight="700">lemonski-tours.com</text>
+  </g>
+
+  <!-- QR codes: booking (left) + Venmo (right) -->
+  <path d="M62 888h551" stroke="#D3D1C7" stroke-width="2"/>
+
+  <g transform="translate(62 904)">
+    <rect width="116" height="116" rx="6" fill="#FFFFFF" stroke="#D3D1C7" stroke-width="1.5"/>
+    <image x="4" y="4" width="108" height="108" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADcAQMAAAAhlF3CAAAABlBMVEXx7+gmIVwQZHjEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABTklEQVRYheWYvXHDMAyFn08FS4+gUTiaPJpH4QgqVfDygh/SjhLHvQEUOoofG4HAAyDgnW0067hQX9d2PYpvsYWCN90rfSFB3lfyKN08UDPBSu5FPUTKwVWhrRNC85Csm7orMJSrp+RGQ0440uFLIOTgy1yJDocwGtzur1UzOjyZQO74xz4bmhN2/259aSjHcEgeOHRgUQZvBSAQqaBogmzwRyugzdEQyVCwNqnwi4u+HIRFBWbLkwO6V6z5dcEr7L7OBOUpKQA8CgBOgpEC3nTfvKKtgISMxIyLZIsFK0flM/HDr1xJAqHpYBt8GnTqSQOnaWiYMGpqXEggFtz8o7uXe7n9q421T+1LAe3GixeAPx5KA+sc/NXaes6VhNB6I1qlGGESD2pjL7P9rPznX0DhoaeDtjkyAWg1OB76kAZ6+LuHtjHzcoZJEvjOvgECLKntvLowCgAAAABJRU5ErkJggg=="/>
+    <text x="58" y="136" text-anchor="middle" fill="#888780" font-family="Arial, Helvetica, sans-serif"
+          font-size="11" font-weight="700" letter-spacing="2">BOOK A TOUR</text>
+    <text x="58" y="152" text-anchor="middle" fill="#3C3489" font-family="Arial, Helvetica, sans-serif"
+          font-size="10" font-weight="700">lemonski-tours.com</text>
+  </g>
+
+  <g transform="translate(240 904)">
+    <rect width="116" height="116" rx="6" fill="#FFFFFF" stroke="#D3D1C7" stroke-width="1.5"/>
+    <image x="4" y="4" width="108" height="108" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADcAQMAAAAhlF3CAAAABlBMVEXx7+gmIVwQZHjEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABmklEQVRYhd2YMbLDMAhE8ahwqSP4KDmadLQcxUdw6cJjwrLSH0/mT3qgSfBTgwSskMgvawo7pR70ZNGr+Dfdo0F8K+eqx6Zv+6v3cpUTH7dkUBVeRdCvbmsBV/OiQsS5i8fJsJNCkbpvlqtdx9qQkKl5VDtOIzzPr7zNANlqALc38hYl+NWHgsCHWTtpHXHKPxYdNk9Uj5mbsNzlWs/qFRkMev+Ax9B4lHpMAcgCRS1qF3QIXWMJOvSloeDIRQqddoEA6DjPRBAKzhP0pdiFcmGte8HgbRdIGULXZ27OvM0DLW+l8Nr8ciruchNCQZQgfgxSAFCRVpLeTFJB5K0Jurlv24W5dmxCJNgwvcjDbq9IXFX2VJCd5hzq0NF5rhUQmxAM6l080I1DG+fsQ+bdJBNUjDbI1GZ5y65Z+Z4QCQ5bERmaJjMVa3PB5jFjzhYObcscTkWiQURJoYMAKG9d6xT0RJAPCFSHTrHwvGUJRoR1pKkOoRv1mQ3qVAed9tiEKFDmW+rjAVL+hpk0cLQaKhtvl2U21ETwl30AGic6prpaG4MAAAAASUVORK5CYII="/>
+    <text x="58" y="136" text-anchor="middle" fill="#888780" font-family="Arial, Helvetica, sans-serif"
+          font-size="11" font-weight="700" letter-spacing="2">PAY WITH VENMO</text>
+    <text x="58" y="152" text-anchor="middle" fill="#3C3489" font-family="Arial, Helvetica, sans-serif"
+          font-size="10" font-weight="700">@James-Leeman-6099</text>
+  </g>
+</svg>

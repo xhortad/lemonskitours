@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1360" viewBox="0 0 1200 1360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="scene">
+      <rect x="0" y="0" width="1200" height="840"/>
+    </clipPath>
+    <clipPath id="bar">
+      <rect x="0" y="632" width="1200" height="208"/>
+    </clipPath>
+  </defs>
+
+  <!-- scene background -->
+  <rect x="0" y="0" width="1200" height="840" fill="#f0eeea" clip-path="url(#scene)"/>
+
+  <g clip-path="url(#scene)">
+
+    <!-- back mountains palest -->
+    <polygon points="-40,660 220,288 480,660" fill="#AFA9EC"/>
+    <polygon points="680,660 960,272 1240,660" fill="#AFA9EC"/>
+
+    <!-- mid mountains -->
+    <polygon points="40,660 320,176 600,660" fill="#7F77DD"/>
+    <polygon points="560,660 840,192 1120,660" fill="#7F77DD"/>
+
+    <!-- side front mountains -->
+    <polygon points="80,660 380,88 680,660" fill="#534AB7"/>
+    <polygon points="520,660 820,104 1120,660" fill="#534AB7"/>
+
+    <!-- hero center peak — dark navy silhouette -->
+    <polygon points="288,660 600,24 912,660" fill="#1a1340"/>
+
+    <!-- amber peak tip -->
+    <polygon points="572,88 600,24 628,88" fill="#EF9F27"/>
+
+    <!-- LEFT pine trees — individual chunky trees -->
+    <!-- tree 1 -->
+    <polygon points="32,660 72,544 112,660" fill="#0d0d28"/>
+    <polygon points="40,608 72,512 104,608" fill="#1a1340"/>
+    <polygon points="48,572 72,488 96,572" fill="#26215C"/>
+    <rect x="60" y="660" width="24" height="24" rx="4" fill="#0d0d28"/>
+
+    <!-- tree 2 -->
+    <polygon points="112,660 160,520 208,660" fill="#0d0d28"/>
+    <polygon points="120,596 160,480 200,596" fill="#1a1340"/>
+    <polygon points="128,552 160,452 192,552" fill="#26215C"/>
+    <rect x="148" y="660" width="24" height="24" rx="4" fill="#0d0d28"/>
+
+    <!-- tree 3 -->
+    <polygon points="200,660 240,560 280,660" fill="#0d0d28"/>
+    <polygon points="208,616 240,532 272,616" fill="#1a1340"/>
+    <polygon points="216,580 240,504 264,580" fill="#26215C"/>
+    <rect x="228" y="660" width="24" height="24" rx="4" fill="#0d0d28"/>
+
+    <!-- tree 4 smaller -->
+    <polygon points="264,660 304,552 344,660" fill="#1a1340"/>
+    <polygon points="272,608 304,520 336,608" fill="#26215C"/>
+    <rect x="292" y="660" width="20" height="20" rx="3" fill="#0d0d28"/>
+
+    <!-- RIGHT pine trees -->
+    <!-- tree 5 smaller -->
+    <polygon points="856,660 896,552 936,660" fill="#1a1340"/>
+    <polygon points="864,608 896,520 928,608" fill="#26215C"/>
+    <rect x="884" y="660" width="20" height="20" rx="3" fill="#0d0d28"/>
+
+    <!-- tree 6 -->
+    <polygon points="920,660 960,560 1000,660" fill="#0d0d28"/>
+    <polygon points="928,616 960,532 992,616" fill="#1a1340"/>
+    <polygon points="936,580 960,504 984,580" fill="#26215C"/>
+    <rect x="948" y="660" width="24" height="24" rx="4" fill="#0d0d28"/>
+
+    <!-- tree 7 -->
+    <polygon points="992,660 1040,520 1088,660" fill="#0d0d28"/>
+    <polygon points="1000,596 1040,480 1080,596" fill="#1a1340"/>
+    <polygon points="1008,552 1040,452 1072,552" fill="#26215C"/>
+    <rect x="1028" y="660" width="24" height="24" rx="4" fill="#0d0d28"/>
+
+    <!-- tree 8 -->
+    <polygon points="1088,660 1128,544 1168,660" fill="#0d0d28"/>
+    <polygon points="1096,608 1128,512 1160,608" fill="#1a1340"/>
+    <polygon points="1104,572 1128,488 1152,572" fill="#26215C"/>
+    <rect x="1116" y="660" width="24" height="24" rx="4" fill="#0d0d28"/>
+
+    <!-- DARK GROUND STRIP -->
+    <rect x="0" y="632" width="1200" height="208" fill="#1a1340"/>
+
+    <!-- tiny pine tips along top of strip -->
+    <polygon points="16,632 36,596 56,632" fill="#0d0d28"/>
+    <polygon points="48,632 72,600 96,632" fill="#1a1340"/>
+    <polygon points="88,632 108,596 128,632" fill="#0d0d28"/>
+    <polygon points="120,632 144,600 168,632" fill="#1a1340"/>
+    <polygon points="160,632 180,596 200,632" fill="#0d0d28"/>
+    <polygon points="192,632 216,600 240,632" fill="#1a1340"/>
+    <polygon points="232,632 252,596 272,632" fill="#0d0d28"/>
+    <polygon points="264,632 288,600 312,632" fill="#1a1340"/>
+    <polygon points="304,632 324,596 344,632" fill="#0d0d28"/>
+    <!-- gap center for amber -->
+    <polygon points="856,632 876,596 896,632" fill="#0d0d28"/>
+    <polygon points="888,632 912,600 936,632" fill="#1a1340"/>
+    <polygon points="928,632 948,596 968,632" fill="#0d0d28"/>
+    <polygon points="960,632 984,600 1008,632" fill="#1a1340"/>
+    <polygon points="1000,632 1020,596 1040,632" fill="#0d0d28"/>
+    <polygon points="1032,632 1056,600 1080,632" fill="#1a1340"/>
+    <polygon points="1072,632 1092,596 1112,632" fill="#0d0d28"/>
+    <polygon points="1104,632 1128,600 1152,632" fill="#1a1340"/>
+    <polygon points="1144,632 1164,596 1184,632" fill="#0d0d28"/>
+
+    <!-- AMBER GUITAR PICK SHAPE — clipped to strip -->
+    <path d="
+      M472,652
+      Q500,644 528,642 Q564,640 600,640 Q636,640 672,642 Q700,644 728,652
+      C784,664 832,696 848,748
+      C840,800 820,832 740,852
+      C700,860 660,864 600,864
+      C540,864 500,860 460,852
+      C380,832 360,800 352,748
+      C368,696 416,664 472,652
+      Z"
+      fill="#EF9F27"
+      clip-path="url(#bar)"/>
+
+  </g>
+
+  <!-- TEXT SECTION -->
+  <!-- LEMONSKI'S -->
+  <text x="600" y="980"
+        text-anchor="middle"
+        font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="900"
+        font-size="148"
+        letter-spacing="4"
+        fill="#3C3489">LEMONSKI'S</text>
+
+  <!-- divider line -->
+  <line x1="100" y1="1012" x2="1100" y2="1012" stroke="#D3D1C7" stroke-width="3"/>
+
+  <!-- TOURS -->
+  <text x="600" y="1080"
+        text-anchor="middle"
+        font-family="'Arial', 'Helvetica Neue', sans-serif"
+        font-weight="400"
+        font-size="60"
+        letter-spacing="32"
+        fill="#888780">TOURS</text>
+
+  <!-- RIDE WITH A LOCAL -->
+  <text x="600" y="1152"
+        text-anchor="middle"
+        font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="800"
+        font-size="44"
+        letter-spacing="14"
+        fill="#EF9F27">RIDE WITH A LOCAL</text>
+
+</svg>

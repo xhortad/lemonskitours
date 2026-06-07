@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" role="img" aria-labelledby="title desc">
+  <title id="title">Lemonski Tours recommended horizontal logo</title>
+  <desc id="desc">A purple mountain and winding trail emblem beside the Lemonski Tours wordmark.</desc>
+
+  <g transform="translate(18 18) scale(.405)">
+    <circle cx="400" cy="400" r="370" fill="#F7F5EF"/>
+    <circle cx="400" cy="400" r="350" fill="none" stroke="#26215C" stroke-width="18"/>
+    <circle cx="400" cy="400" r="258" fill="#EEEDFE" stroke="#534AB7" stroke-width="7"/>
+    <clipPath id="horizontalScene"><circle cx="400" cy="400" r="245"/></clipPath>
+    <g clip-path="url(#horizontalScene)">
+      <circle cx="276" cy="286" r="54" fill="#EF9F27"/>
+      <path d="M90 485 260 300l83 91 111-155 260 249Z" fill="#AFA9EC"/>
+      <path d="m92 505 220-162 84 80 93-116 226 198Z" fill="#7F77DD"/>
+      <path d="m80 540 255-159 85 68 93-98 222 189Z" fill="#3C3489"/>
+      <path d="M78 543q84-35 169-10t166-4q95-34 222 10l76 106H70Z" fill="#342D7B"/>
+      <g fill="#26215C">
+        <path d="m118 503 31-90 31 90h-19l28 43h-80l28-43Z"/>
+        <path d="m615 503 31-90 31 90h-19l28 43h-80l28-43Z"/>
+      </g>
+      <path d="M316 645 382 503q18-38 38-1l65 143Z" fill="#1A1340" opacity=".58"/>
+      <g transform="translate(7 0)" fill="none" stroke="#AFA9EC" stroke-linecap="square">
+        <g opacity=".56">
+          <path d="m344 618 18-19m-7 25 18-19m46 20-18-19m7 25-18-19" stroke-width="10"/>
+        </g>
+        <g opacity=".46">
+          <path d="m360 578 15-16m-5 20 15-16m28 17-15-16m5 20-15-16" stroke-width="8"/>
+        </g>
+        <g opacity=".36">
+          <path d="m375 546 12-13m-4 16 12-13m20 14-12-13m4 16-12-13" stroke-width="6"/>
+        </g>
+        <g opacity=".26">
+          <path d="m389 521 9-10m-3 13 9-10m14 11-9-10m3 13-9-10" stroke-width="4"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <text x="380" y="164" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif"
+        font-size="102" font-weight="900" letter-spacing="2">LEMONSKI</text>
+  <text x="386" y="240" fill="#AFA9EC" font-family="Arial, Helvetica, sans-serif"
+        font-size="48" font-weight="800" letter-spacing="20">TOURS</text>
+  <path d="M383 268h648" stroke="#AFA9EC" stroke-width="4"/>
+  <text x="386" y="315" fill="#EF9F27" font-family="Arial, Helvetica, sans-serif"
+        font-size="30" font-weight="900" letter-spacing="9">RIDE WITH A LOCAL</text>
+</svg>

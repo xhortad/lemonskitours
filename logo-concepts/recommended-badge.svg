@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Lemonski Tours recommended badge logo</title>
+  <desc id="desc">A circular purple outdoor badge with White Mountains, pine trees, an amber sun, and a winding trail.</desc>
+  <defs>
+    <path id="topArc" d="M120 400a280 280 0 0 1 560 0"/>
+    <path id="bottomArc" d="M120 456a280 280 0 0 0 560 0"/>
+    <clipPath id="sceneClip">
+      <circle cx="400" cy="400" r="245"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="400" cy="400" r="390" fill="#F7F5EF"/>
+  <circle cx="400" cy="400" r="375" fill="none" stroke="#26215C" stroke-width="18"/>
+  <circle cx="400" cy="400" r="250" fill="#EEEDFE" stroke="#534AB7" stroke-width="7"/>
+
+  <g clip-path="url(#sceneClip)">
+    <circle cx="276" cy="286" r="54" fill="#EF9F27"/>
+    <path d="M90 485 260 300l83 91 111-155 260 249Z" fill="#AFA9EC"/>
+    <path d="m92 505 220-162 84 80 93-116 226 198Z" fill="#7F77DD"/>
+    <path d="m80 540 255-159 85 68 93-98 222 189Z" fill="#3C3489"/>
+    <path d="M78 543q84-35 169-10t166-4q95-34 222 10l76 106H70Z" fill="#342D7B"/>
+
+    <g fill="#26215C">
+      <path d="m118 503 31-90 31 90h-19l28 43h-80l28-43Z"/>
+      <path d="m177 508 25-72 25 72h-15l23 36h-66l23-36Z"/>
+      <path d="m615 503 31-90 31 90h-19l28 43h-80l28-43Z"/>
+      <path d="m562 509 24-70 24 70h-14l22 35h-64l22-35Z"/>
+    </g>
+
+    <path d="M316 645 382 503q18-38 38-1l65 143Z" fill="#1A1340" opacity=".58"/>
+    <g transform="translate(7 0)" fill="none" stroke="#AFA9EC" stroke-linecap="square">
+      <g opacity=".56">
+        <path d="m344 618 18-19m-7 25 18-19m46 20-18-19m7 25-18-19" stroke-width="10"/>
+      </g>
+      <g opacity=".46">
+        <path d="m360 578 15-16m-5 20 15-16m28 17-15-16m5 20-15-16" stroke-width="8"/>
+      </g>
+      <g opacity=".36">
+        <path d="m375 546 12-13m-4 16 12-13m20 14-12-13m4 16-12-13" stroke-width="6"/>
+      </g>
+      <g opacity=".26">
+        <path d="m389 521 9-10m-3 13 9-10m14 11-9-10m3 13-9-10" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+
+  <text fill="#26215C" font-family="Arial, Helvetica, sans-serif" font-size="61" font-weight="900" letter-spacing="8">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">LEMONSKI TOURS</textPath>
+  </text>
+  <text fill="#3C3489" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" letter-spacing="7">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">RIDE WITH A LOCAL</textPath>
+  </text>
+</svg>

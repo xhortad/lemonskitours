@@ -1,0 +1,228 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); }
+  .page { padding: 2rem 1.5rem; max-width: 680px; }
+  .section { margin-bottom: 2.5rem; }
+  .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #7F77DD; margin-bottom: 0.75rem; }
+  .section-title { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 1rem; }
+  .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; margin-bottom: 0.75rem; }
+  .card-label { font-size: 12px; color: #7F77DD; font-weight: 500; margin-bottom: 0.4rem; }
+  .card-text { font-size: 15px; color: var(--color-text-primary); line-height: 1.6; }
+  .card-sub { font-size: 13px; color: var(--color-text-secondary); margin-top: 0.4rem; line-height: 1.5; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem; }
+  .swatch-row { display: flex; gap: 10px; align-items: flex-end; margin-top: 0.75rem; flex-wrap: wrap; }
+  .swatch { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .swatch-box { width: 52px; height: 52px; border-radius: 10px; border: 0.5px solid rgba(0,0,0,0.08); }
+  .swatch-name { font-size: 10px; color: var(--color-text-secondary); text-align: center; line-height: 1.3; }
+  .hero-bar { background: #3C3489; border-radius: var(--border-radius-lg); padding: 1.5rem; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 6px; }
+  .hero-name { font-size: 26px; font-weight: 500; color: #EEEDFE; letter-spacing: 0.01em; }
+  .hero-tagline { font-size: 14px; color: #AFA9EC; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 0.5rem 0 1.25rem; }
+  .pill { display: inline-block; background: #EEEDFE; color: #3C3489; font-size: 12px; padding: 3px 10px; border-radius: 20px; margin: 3px 3px 0 0; font-weight: 500; }
+  .storybrand-step { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 0.75rem; }
+  .step-num { width: 28px; height: 28px; border-radius: 50%; background: #EEEDFE; color: #3C3489; font-size: 12px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .step-content { flex: 1; }
+  .step-title { font-size: 13px; font-weight: 500; color: #534AB7; margin-bottom: 2px; }
+  .step-text { font-size: 14px; color: var(--color-text-primary); line-height: 1.55; }
+</style>
+
+<div class="page">
+
+  <div class="hero-bar">
+    <div class="hero-name">Lemonski's Tours</div>
+    <div class="hero-tagline">ATV Adventures · North Country, NH · Est. 2024</div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Storybrand Framework</div>
+    <div class="section-title">The brand story</div>
+
+    <div class="storybrand-step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <div class="step-title">The character (your customer)</div>
+        <div class="step-text">Vacationers, families, couples, and adventurers visiting the North Country of NH — they want to experience the real outdoors, not just a tourist checklist.</div>
+      </div>
+    </div>
+
+    <div class="storybrand-step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <div class="step-title">The problem</div>
+        <div class="step-text">They have an ATV and open trails — but no local knowledge, no guide, and no idea how to turn a rental into a real memory. They worry they'll miss what makes this place special.</div>
+      </div>
+    </div>
+
+    <div class="storybrand-step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <div class="step-title">The guide (Lemonski's)</div>
+        <div class="step-text">Lemonski's is the local insider — someone who actually lives and rides here. Personal, fun, and passionate about showing people the North Country they'd never find on their own.</div>
+      </div>
+    </div>
+
+    <div class="storybrand-step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <div class="step-title">The plan</div>
+        <div class="step-text">Book a guided ATV tour → ride with a local who knows every trail and lookout → get photos taken and stories told along the way → leave with a full-day memory, not just miles logged.</div>
+      </div>
+    </div>
+
+    <div class="storybrand-step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <div class="step-title">The call to action</div>
+        <div class="step-text">"Book your ride" — simple, direct, personal.</div>
+      </div>
+    </div>
+
+    <div class="storybrand-step">
+      <div class="step-num">6</div>
+      <div class="step-content">
+        <div class="step-title">Success (what they gain)</div>
+        <div class="step-text">A day they'll talk about for years — great photos, great stories, and a real connection to the North Country. Not just a ride, a full experience.</div>
+      </div>
+    </div>
+
+    <div class="storybrand-step">
+      <div class="step-num">7</div>
+      <div class="step-content">
+        <div class="step-title">Failure avoided</div>
+        <div class="step-text">No more "we just rode around and didn't really see anything." No missed lookouts, no wrong turns, no forgettable afternoon.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Mission & Voice</div>
+    <div class="section-title">Core statements</div>
+
+    <div class="card">
+      <div class="card-label">Mission statement</div>
+      <div class="card-text">"To give every rider a personal, unforgettable taste of the North Country — the trails, the views, and the stories that make this place worth knowing."</div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Tagline options</div>
+      <div class="card-text">"Ride with a local."</div>
+      <div class="card-sub">— or — "Your ride. Your story. Our trails." &nbsp; — or — "The North Country, up close."</div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Brand voice</div>
+      <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:4px;">
+        <span class="pill">Warm</span>
+        <span class="pill">Personal</span>
+        <span class="pill">Adventurous</span>
+        <span class="pill">Rustic & real</span>
+        <span class="pill">Never corporate</span>
+        <span class="pill">Storytelling</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Color Palette</div>
+    <div class="section-title">Brand colors</div>
+
+    <div class="card">
+      <div class="card-label">Primary — Trail Purple</div>
+      <div class="card-sub" style="margin-bottom:10px;">Hero color. Logos, headers, buttons, accents. Nod to the owner's personality — bold and memorable.</div>
+      <div class="swatch-row">
+        <div class="swatch"><div class="swatch-box" style="background:#EEEDFE;"></div><div class="swatch-name">Purple 50<br>#EEEDFE</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#AFA9EC;"></div><div class="swatch-name">Purple 200<br>#AFA9EC</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#7F77DD;"></div><div class="swatch-name">Purple 400<br>#7F77DD</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#534AB7; border:none;"></div><div class="swatch-name">Purple 600<br>#534AB7</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#3C3489; border:none;"></div><div class="swatch-name">Purple 800<br>#3C3489 ★</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#26215C; border:none;"></div><div class="swatch-name">Purple 900<br>#26215C</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Secondary — Trailhead Amber</div>
+      <div class="card-sub" style="margin-bottom:10px;">Fall foliage, golden hour on the trails. Pairs perfectly with purple — warm energy to balance the cool.</div>
+      <div class="swatch-row">
+        <div class="swatch"><div class="swatch-box" style="background:#FAEEDA;"></div><div class="swatch-name">Amber 50<br>#FAEEDA</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#FAC775;"></div><div class="swatch-name">Amber 100<br>#FAC775</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#EF9F27;"></div><div class="swatch-name">Amber 400<br>#EF9F27 ★</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#BA7517; border:none;"></div><div class="swatch-name">Amber 600<br>#BA7517</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Neutral — Trail Stone (Gray)</div>
+      <div class="card-sub" style="margin-bottom:10px;">Backgrounds, body text, secondary UI. Keeps things grounded and readable.</div>
+      <div class="swatch-row">
+        <div class="swatch"><div class="swatch-box" style="background:#F1EFE8;"></div><div class="swatch-name">Stone 50<br>#F1EFE8</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#D3D1C7;"></div><div class="swatch-name">Stone 100<br>#D3D1C7</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#888780;"></div><div class="swatch-name">Stone 400<br>#888780</div></div>
+        <div class="swatch"><div class="swatch-box" style="background:#2C2C2A; border:none;"></div><div class="swatch-name">Stone 900<br>#2C2C2A</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Color usage rules</div>
+      <div class="card-text" style="font-size:13px; line-height:1.7;">
+        <div>★ <strong style="color:var(--color-text-primary)">Purple 800</strong> — primary logo color, CTA buttons, headlines</div>
+        <div>★ <strong style="color:var(--color-text-primary)">Amber 400</strong> — highlight accents, badges, price tags, warmth</div>
+        <div>→ Never use purple and amber at equal weight — let purple lead, amber pop</div>
+        <div>→ White text on Purple 600+, dark text on Amber 50–200</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Target Customer</div>
+    <div class="section-title">Who we ride for</div>
+    <div class="grid2">
+      <div class="card">
+        <div class="card-label">Families</div>
+        <div class="card-text" style="font-size:13px;">Parents who want a real outdoor activity the whole crew will remember — not a theme park.</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Adventure adults</div>
+        <div class="card-text" style="font-size:13px;">People who came to NH to do something, not just sit by a lake. They want grit and beauty.</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Couples</div>
+        <div class="card-text" style="font-size:13px;">Looking for something unique and memorable — a "you had to be there" story to tell.</div>
+      </div>
+      <div class="card">
+        <div class="card-label">First-timers</div>
+        <div class="card-text" style="font-size:13px;">Never been on an ATV — Lemonski's makes it approachable, safe, and still a blast.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">What Makes Us Different</div>
+    <div class="section-title">The Lemonski's difference</div>
+    <div class="card">
+      <div class="storybrand-step" style="margin-bottom:0.5rem;">
+        <div class="step-num" style="background:#FAEEDA; color:#854F0B;">📸</div>
+        <div class="step-content">
+          <div class="step-title" style="color:#854F0B;">Personal photos included</div>
+          <div class="step-text">We take the shots for you — real moments, real places, no awkward selfie stops.</div>
+        </div>
+      </div>
+      <div class="storybrand-step" style="margin-bottom:0.5rem;">
+        <div class="step-num" style="background:#FAEEDA; color:#854F0B;">🗺️</div>
+        <div class="step-content">
+          <div class="step-title" style="color:#854F0B;">Local knowledge you can't Google</div>
+          <div class="step-text">Hidden lookouts, secret spots, trail stories — things no map or app can give you.</div>
+        </div>
+      </div>
+      <div class="storybrand-step" style="margin-bottom:0">
+        <div class="step-num" style="background:#FAEEDA; color:#854F0B;">🤝</div>
+        <div class="step-content">
+          <div class="step-title" style="color:#854F0B;">It's personal — always</div>
+          <div class="step-text">Not a bus tour. Not a group shuffle. Lemonski's tailors every ride to who's on it.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
