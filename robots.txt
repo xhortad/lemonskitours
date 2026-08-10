@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lemonski-tours.com/sitemap.xml
