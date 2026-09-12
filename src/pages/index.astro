@@ -13,7 +13,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h1>Don't just ride.<br><em>Know the trail.</em></h1>
       <p class="hero-copy">Bring your own buggy or rent one locally — either way, add a Lemonski tour and follow a local guide across the North Country's Ride the Wilds trails, from Berlin and Gorham to the views and stories you'd miss on your own.</p>
       <div class="hero-actions">
-        <a class="button button-primary" href="#book">Add a guided tour <span aria-hidden="true">→</span></a>
+        <a class="button button-primary" href="/book">Add a guided tour <span aria-hidden="true">→</span></a>
         <a class="text-link light-link" href="/guide">Meet your guide <span aria-hidden="true">↓</span></a>
       </div>
     </div>
@@ -146,13 +146,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="booking-copy">
       <p class="eyebrow light">Let's plan your ride</p>
       <h2>Pick a time and let's ride.</h2>
-      <p>We run two tours every Saturday and Sunday — a morning tour at <strong>9 am</strong> and an afternoon tour at <strong>2 pm</strong>. Pick your slot below and we'll get you set up.</p>
-      <div class="booking-note">
-        <strong>Tours starting at $200.</strong>
-        <span>Pick a time below to lock in your ride — we'll take care of the rest.</span>
+      <p>We run two tours every Saturday and Sunday — a morning tour at <strong>9 am</strong> and an afternoon tour at <strong>2 pm</strong>. Tours starting at <strong>$200</strong>.</p>
+      <div class="page-cta">
+        <a class="button button-primary" href="/book">Book your tour <span aria-hidden="true">→</span></a>
       </div>
     </div>
-    <!-- Google Calendar Appointment Scheduling -->
-    <iframe class="booking-scheduler" title="Book a Lemonski Tour" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3ZP4ad_aijStud_D6EPzWhr4XXO-S8nPiIhl1JKIZx8d_qcgxACk1LOgR_JJ25uc36ZOOp3UpU?gv=true" style="border:0" width="100%" height="700" frameborder="0"></iframe>
   </section>
 </BaseLayout>

@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Book a Tour | Lemonski Tours — Guided ATV Rides, North Country NH"
+  description="Book your guided ATV tour with Lemonski Tours. Two tours every Saturday and Sunday — 9 am and 2 pm — across New Hampshire's North Country. Tours from $200."
+>
+  <section class="page-head section">
+    <p class="eyebrow">Let's plan your ride</p>
+    <h1 class="page-title">Pick a time and let's ride.</h1>
+  </section>
+
+  <section class="booking" id="book">
+    <div class="booking-copy">
+      <p>We run two tours every Saturday and Sunday — a morning tour at <strong>9 am</strong> and an afternoon tour at <strong>2 pm</strong>. Pick your slot below and we'll get you set up.</p>
+      <div class="booking-note">
+        <strong>Tours starting at $200.</strong>
+        <span>You bring or rent the buggy; we bring the local guide. Photos along the way are included.</span>
+      </div>
+      <ul class="book-facts">
+        <li><strong>Where</strong> Berlin, NH &amp; the Ride the Wilds trails</li>
+        <li><strong>When</strong> Sat &amp; Sun · 9 am &amp; 2 pm</li>
+        <li><strong>Who</strong> First-timers to seasoned riders — families and groups welcome</li>
+        <li><strong>Weather</strong> We ride rain or shine; dress for the mountains</li>
+      </ul>
+    </div>
+    <!-- Google Calendar Appointment Scheduling -->
+    <iframe class="booking-scheduler" title="Book a Lemonski Tour" src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3ZP4ad_aijStud_D6EPzWhr4XXO-S8nPiIhl1JKIZx8d_qcgxACk1LOgR_JJ25uc36ZOOp3UpU?gv=true" style="border:0" width="100%" height="700" frameborder="0"></iframe>
+  </section>
+</BaseLayout>
