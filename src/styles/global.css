@@ -96,6 +96,8 @@ nav a:not(.nav-cta):hover { color: var(--amber); }
 
 .hero {
   position: relative;
+  display: flex;
+  align-items: center;
   min-height: 820px;
   height: 100svh;
   color: var(--white);
@@ -115,7 +117,7 @@ nav a:not(.nav-cta):hover { color: var(--amber); }
   position: relative;
   z-index: 1;
   width: min(720px, 85vw);
-  padding-top: clamp(12rem, 28vh, 18rem);
+  padding: 96px 0 clamp(6rem, 15vh, 10rem);
   margin-left: clamp(1.25rem, 8vw, 9rem);
 }
 .eyebrow {
