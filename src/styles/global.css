@@ -65,7 +65,10 @@ button, input, select, textarea { font: inherit; }
   justify-content: space-between;
   padding: 0 clamp(1.25rem, 5vw, 5.5rem);
   color: var(--white);
-  border-bottom: 1px solid rgba(255,255,255,.22);
+  background: rgba(255,255,255,.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,.28);
 }
 .brand {
   display: block;
@@ -86,18 +89,21 @@ nav a {
 }
 nav a:not(.nav-cta):hover { color: var(--amber); }
 .nav-cta {
-  padding: .72rem 1.1rem;
-  border: 1px solid rgba(255,255,255,.6);
+  padding: .72rem 1.2rem;
+  background: var(--amber);
+  color: var(--purple-950);
+  border: 1px solid var(--amber);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .08em;
 }
-.nav-cta:hover { background: var(--white); color: var(--purple-900); }
+.nav-cta:hover { background: #ffb846; border-color: #ffb846; color: var(--purple-950); }
 .menu-toggle { display: none; }
 
 .hero {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: safe center;
   min-height: 820px;
   height: 100svh;
   color: var(--white);
@@ -117,7 +123,7 @@ nav a:not(.nav-cta):hover { color: var(--amber); }
   position: relative;
   z-index: 1;
   width: min(720px, 85vw);
-  padding: 96px 0 clamp(6rem, 15vh, 10rem);
+  padding: 118px 0 clamp(6rem, 15vh, 10rem);
   margin-left: clamp(1.25rem, 8vw, 9rem);
 }
 .eyebrow {
