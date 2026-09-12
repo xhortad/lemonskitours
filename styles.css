@@ -28,6 +28,7 @@ body {
 body.menu-open { overflow: hidden; }
 img { display: block; max-width: 100%; }
 a { color: inherit; }
+[hidden] { display: none !important; }
 button, input, select, textarea { font: inherit; }
 .sr-only {
   position: absolute;
@@ -221,6 +222,64 @@ h1 em { color: var(--amber); font-style: normal; }
 .benefit-card p { max-width: 350px; color: var(--muted); }
 .benefit-card.featured p { color: rgba(255,255,255,.72); }
 
+.trail-gallery {
+  display: grid;
+  grid-template-columns: minmax(250px, .72fr) minmax(0, 1.28fr);
+  grid-template-rows: auto auto;
+  gap: clamp(1rem, 2vw, 2rem);
+  align-items: end;
+  padding-top: clamp(4rem, 7vw, 7rem);
+  background: var(--purple-950);
+  color: var(--white);
+}
+.trail-gallery-copy { max-width: 520px; padding: 0 clamp(1rem, 3vw, 3rem) 1rem 0; }
+.trail-gallery-copy h2 {
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  font-size: clamp(2.7rem, 5vw, 5.3rem);
+  letter-spacing: -.03em;
+  text-transform: uppercase;
+}
+.trail-gallery-copy > p:last-child { margin-bottom: 0; color: rgba(255,255,255,.68); }
+.trail-photo { margin: 0; overflow: hidden; }
+.trail-photo img { width: 100%; height: 100%; object-fit: cover; }
+.trail-photo-main { min-height: 560px; }
+.trail-photo-wide { grid-column: 1 / -1; height: clamp(260px, 34vw, 520px); }
+.trail-photo-wide img { object-position: center 58%; }
+
+.trail-moments { background: var(--stone); }
+.trail-moments-heading {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, .65fr);
+  gap: 1.5rem clamp(2rem, 8vw, 8rem);
+  align-items: end;
+  margin-bottom: clamp(2.5rem, 5vw, 5rem);
+}
+.trail-moments-heading .eyebrow { grid-column: 1 / -1; margin-bottom: 0; }
+.trail-moments-heading > p:last-child { margin-bottom: .4rem; color: var(--muted); }
+.trail-moments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+.moment { position: relative; margin: 0; overflow: hidden; background: var(--purple-950); }
+.moment:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.moment video, .moment img { width: 100%; height: clamp(300px, 36vw, 560px); display: block; object-fit: cover; }
+.moment-video video { object-position: center; }
+.moment-photo img { transition: transform .4s ease; }
+.moment-photo:hover img { transform: scale(1.02); }
+.moment figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: .75rem 1rem;
+  background: rgba(22,16,47,.9);
+  color: var(--white);
+  font: 600 .72rem var(--body);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
 .guide {
   display: grid;
   grid-template-columns: minmax(300px, .72fr) 1.28fr;
@@ -351,6 +410,41 @@ cite { display: block; margin-top: .8rem; color: var(--muted); font-size: .75rem
 .accordion details[open] summary span { transform: rotate(45deg); }
 .accordion details p { max-width: 680px; padding: 0 2rem 1.5rem 0; color: var(--muted); }
 
+.reviews-intro {
+  max-width: 640px;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+.reviews-cta { display: flex; justify-content: center; margin-top: 2rem; }
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  text-align: left;
+}
+.review-card {
+  padding: 2rem;
+  background: var(--white);
+  border: 1px solid var(--stone-mid);
+}
+.review-stars { margin-bottom: 1rem; color: var(--amber); letter-spacing: .2em; }
+.review-card blockquote {
+  margin: 0 0 1.2rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--amber);
+  color: var(--purple-900);
+  font: 500 1.05rem/1.5 var(--body);
+}
+.review-card figcaption {
+  color: var(--muted);
+  font: 700 .74rem var(--body);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
 .booking {
   display: grid;
   grid-template-columns: 1fr;
@@ -472,6 +566,13 @@ footer {
   .hero-content { padding-top: 12rem; margin-left: 1.25rem; }
   .hero-proof { right: 1rem; left: 1rem; }
   .intro, .guide, .audience, .faq, .booking { grid-template-columns: 1fr; }
+  .review-grid { grid-template-columns: 1fr; }
+  .trail-gallery { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .trail-gallery-copy { padding-right: 0; padding-bottom: 1rem; }
+  .trail-photo-main { min-height: 470px; }
+  .trail-photo-wide { grid-column: auto; }
+  .trail-moments-heading { grid-template-columns: 1fr; }
+  .trail-moments-heading .eyebrow { grid-column: auto; }
   .benefits { grid-template-columns: 1fr; gap: 1rem; }
   .benefit-card { min-height: auto; }
   .benefit-card.featured { transform: none; }
@@ -494,6 +595,11 @@ footer {
   .steps { grid-template-columns: 1fr; margin-top: 3rem; }
   .audience-list, .field-row { grid-template-columns: 1fr; }
   .guide-art { min-height: 390px; }
+  .trail-photo-main { min-height: 360px; }
+  .trail-photo-wide { height: 270px; }
+  .trail-moments-grid { grid-template-columns: 1fr; }
+  .moment:last-child:nth-child(odd) { grid-column: auto; }
+  .moment video, .moment img { height: 420px; }
   .stamp { width: 90px; height: 90px; font-size: .6rem; }
   footer { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: .5rem; }
