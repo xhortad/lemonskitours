@@ -1,11 +1,31 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
+
+// Feature shots
+import mountainVista from '../assets/gallery/mountain-vista.jpg';
+import pondSunset from '../assets/gallery/pond-sunset.jpg';
+
+// Moments grid
+import rzrBlueTrail from '../assets/gallery/rzr-blue-trail.jpg';
 import fallTrail from '../assets/gallery/fall-trail-view.jpg';
+import waterfallTall from '../assets/gallery/waterfall-tall.jpg';
+import mountainRange from '../assets/gallery/mountain-range.jpg';
 import fallOverlook from '../assets/gallery/fall-mountain-overlook.jpg';
-import waterfallFall from '../assets/gallery/waterfall-fall.jpg';
-import waterfallSummer from '../assets/gallery/waterfall-summer.jpg';
+import waterfallAutumn from '../assets/gallery/waterfall-autumn.jpg';
 import trailSideBuggy from '../assets/gallery/trail-side-buggy.jpg';
+import waterfallSummer from '../assets/gallery/waterfall-summer.jpg';
+
+const moments = [
+  { img: rzrBlueTrail, alt: 'Blue Polaris RZR side-by-side buggy on a North Country dirt trail', caption: 'Your machine, ready to ride' },
+  { img: fallTrail, alt: 'Gravel ATV trail winding through colorful fall forest toward New Hampshire mountains', caption: 'On the trail' },
+  { img: waterfallTall, alt: 'Tall waterfall cascading down dark rock, framed by summer forest', caption: 'Waterfall stops' },
+  { img: mountainRange, alt: "Layered North Country mountain range under dramatic clouds", caption: 'Ridgelines for miles' },
+  { img: fallOverlook, alt: "Wide mountain overlook with fall foliage beneath dramatic clouds", caption: 'Big overlooks' },
+  { img: waterfallAutumn, alt: 'Waterfall over rocky ledges surrounded by early-autumn trees', caption: 'Backcountry falls' },
+  { img: trailSideBuggy, alt: 'Blue side-by-side buggy parked beside a wooded gravel trail', caption: 'Ready for the backcountry' },
+  { img: waterfallSummer, alt: 'Waterfall cascading down a rocky gorge surrounded by green forest', caption: 'Summer runs' },
+];
 ---
 <BaseLayout
   title="Gallery | Lemonski Tours — North Country ATV Trails"
@@ -20,13 +40,13 @@ import trailSideBuggy from '../assets/gallery/trail-side-buggy.jpg';
   <section class="trail-gallery section" aria-labelledby="trail-gallery-title">
     <div class="trail-gallery-copy">
       <h2 id="trail-gallery-title">Mountain views in every direction.</h2>
-      <p>Winding backcountry trails, big overlooks, and North Country color beyond the pavement. Come see what a guided day out looks like.</p>
+      <p>Winding backcountry trails, big overlooks, waterfalls, and North Country color beyond the pavement. Come see what a guided day out looks like.</p>
     </div>
     <figure class="trail-photo trail-photo-main">
-      <Image src={fallTrail} alt="Gravel ATV trail winding through colorful fall forest toward New Hampshire mountains" />
+      <Image src={mountainVista} alt="North Country mountains in early fall color seen from a gravel trail" />
     </figure>
     <figure class="trail-photo trail-photo-wide">
-      <Image src={fallOverlook} alt="Wide mountain overlook with fall foliage beneath dramatic clouds in New Hampshire's North Country" />
+      <Image src={pondSunset} alt="Backcountry beaver pond reflecting a pastel sunset sky, ringed by pines" />
     </figure>
   </section>
 
@@ -37,18 +57,12 @@ import trailSideBuggy from '../assets/gallery/trail-side-buggy.jpg';
       <p>Waterfalls, backcountry roads, and the moments in between — every ride brings something worth stopping for.</p>
     </div>
     <div class="trail-moments-grid">
-      <figure class="moment moment-photo">
-        <Image src={waterfallFall} alt="Waterfall framed by autumn foliage in the North Country" />
-        <figcaption>Waterfall stops</figcaption>
-      </figure>
-      <figure class="moment moment-photo">
-        <Image src={waterfallSummer} alt="Waterfall cascading down a rocky gorge surrounded by green North Country forest" />
-        <figcaption>Summer runs</figcaption>
-      </figure>
-      <figure class="moment moment-photo">
-        <Image src={trailSideBuggy} alt="Blue side-by-side buggy parked beside a wooded gravel trail" />
-        <figcaption>Ready for the backcountry</figcaption>
-      </figure>
+      {moments.map((m) => (
+        <figure class="moment moment-photo">
+          <Image src={m.img} alt={m.alt} />
+          <figcaption>{m.caption}</figcaption>
+        </figure>
+      ))}
     </div>
   </section>
 
