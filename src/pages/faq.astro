@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqs = [
+  {
+    q: 'Do I need ATV experience?',
+    a: "No. First-timers are welcome. Tell us your group's experience level and we'll plan a pace that feels comfortable while keeping the day adventurous.",
+  },
+  {
+    q: 'Do you provide the ATV or buggy?',
+    a: "Lemonski Tours provides the guided tour, not the vehicle. Bring your own buggy or ATV, or rent one from a local rental business — either way, just add our tour and you're set. You drive and follow your guide.",
+  },
+  {
+    q: 'Can you help me find a rental?',
+    a: 'Yes. Lemonski Tours works with local ATV rental businesses and can help point you toward a rental that fits your date and group.',
+  },
+  {
+    q: 'What should I bring?',
+    a: "Dress for changing mountain weather and wear sturdy closed-toe shoes. We'll share a complete ride-day checklist when your tour is confirmed.",
+  },
+  {
+    q: 'What happens if the weather turns?',
+    a: "We ride rain or shine. Come prepared for whatever the mountain throws at you — that's part of the adventure.",
+  },
+];
+---
+<BaseLayout
+  title="FAQ | Lemonski Tours — Guided ATV Tours, North Country NH"
+  description="Answers to common questions about Lemonski Tours' guided ATV rides in New Hampshire's North Country: experience needed, bringing vs. renting a buggy, what to bring, and weather."
+>
+  <section class="page-head section">
+    <p class="eyebrow">Good to know</p>
+    <h1 class="page-title">Questions before you hit the trail?</h1>
+  </section>
+
+  <section class="faq-page section">
+    <div class="accordion">
+      {faqs.map((item, i) => (
+        <details open={i === 0}>
+          <summary>{item.q}<span>+</span></summary>
+          <p>{item.a}</p>
+        </details>
+      ))}
+    </div>
+    <div class="page-cta">
+      <a class="button button-primary" href="/#book">Add a guided tour <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((item) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": { "@type": "Answer", "text": item.a },
+    })),
+  })} />
+</BaseLayout>

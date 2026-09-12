@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import fallTrail from '../assets/gallery/fall-trail-view.jpg';
+import fallOverlook from '../assets/gallery/fall-mountain-overlook.jpg';
+import waterfallFall from '../assets/gallery/waterfall-fall.jpg';
+import waterfallSummer from '../assets/gallery/waterfall-summer.jpg';
+import trailSideBuggy from '../assets/gallery/trail-side-buggy.jpg';
+---
+<BaseLayout
+  title="Gallery | Lemonski Tours — North Country ATV Trails"
+  description="See where a Lemonski guided ATV tour takes you: mountain views, backcountry trails, waterfalls, and fall color across New Hampshire's North Country."
+  image="/files/north-country-atv-hero.png"
+>
+  <section class="page-head section">
+    <p class="eyebrow">On the trail</p>
+    <h1 class="page-title">This is where the ride takes you.</h1>
+  </section>
+
+  <section class="trail-gallery section" aria-labelledby="trail-gallery-title">
+    <div class="trail-gallery-copy">
+      <h2 id="trail-gallery-title">Mountain views in every direction.</h2>
+      <p>Winding backcountry trails, big overlooks, and North Country color beyond the pavement. Come see what a guided day out looks like.</p>
+    </div>
+    <figure class="trail-photo trail-photo-main">
+      <Image src={fallTrail} alt="Gravel ATV trail winding through colorful fall forest toward New Hampshire mountains" />
+    </figure>
+    <figure class="trail-photo trail-photo-wide">
+      <Image src={fallOverlook} alt="Wide mountain overlook with fall foliage beneath dramatic clouds in New Hampshire's North Country" />
+    </figure>
+  </section>
+
+  <section class="trail-moments section" aria-labelledby="trail-moments-title">
+    <div class="section-heading trail-moments-heading">
+      <p class="eyebrow">Along the way</p>
+      <h2 id="trail-moments-title">The stops are part of the story.</h2>
+      <p>Waterfalls, backcountry roads, and the moments in between — every ride brings something worth stopping for.</p>
+    </div>
+    <div class="trail-moments-grid">
+      <figure class="moment moment-photo">
+        <Image src={waterfallFall} alt="Waterfall framed by autumn foliage in the North Country" />
+        <figcaption>Waterfall stops</figcaption>
+      </figure>
+      <figure class="moment moment-photo">
+        <Image src={waterfallSummer} alt="Waterfall cascading down a rocky gorge surrounded by green North Country forest" />
+        <figcaption>Summer runs</figcaption>
+      </figure>
+      <figure class="moment moment-photo">
+        <Image src={trailSideBuggy} alt="Blue side-by-side buggy parked beside a wooded gravel trail" />
+        <figcaption>Ready for the backcountry</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section page-cta-band">
+    <div class="page-cta">
+      <a class="button button-primary" href="/#book">Add a guided tour <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</BaseLayout>
