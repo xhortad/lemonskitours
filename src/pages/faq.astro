@@ -8,24 +8,48 @@ const faqs = [
   },
   {
     q: 'Do you provide the ATV or buggy?',
-    a: "Lemonski Tours provides the guided tour, not the vehicle. Bring your own buggy or ATV, or rent one from a local rental business — either way, just add our tour and you're set. You drive and follow your guide.",
+    a: "Lemonski Tours provides the guide, not the vehicle. Bring your own buggy or ATV, or rent one locally. You drive your machine and follow Jay.",
+  },
+  {
+    q: 'Are there restrictions on the type of machine I can bring?',
+    a: 'Lemonski Tours does not currently restrict the type of ATV or buggy you can bring on a tour. You may bring your own machine or rent one locally.',
+  },
+  {
+    q: 'What permits, equipment, or documents do I need?',
+    a: 'Every rider is responsible for making sure their machine, equipment, permits, registration, licensing, and insurance meet all legal requirements for the trails. If you are renting, confirm what is provided and required with your rental company before tour day.',
+  },
+  {
+    q: 'Are there minimum ages for drivers or passengers?',
+    a: 'Lemonski Tours does not add separate age restrictions. Every driver and passenger must meet all applicable legal requirements and, when renting, the rental company’s requirements.',
   },
   {
     q: 'Can you help me find a rental?',
-    a: 'Yes. Lemonski Tours works with local ATV rental businesses and can help point you toward a rental that fits your date and group.',
+    a: "Yes. The area's two major rental companies are Jericho Adventures at 111 Jericho Road in Berlin and Northeast ATV Rentals at 447 Main Street in Gorham. Reserve your buggy with one of them, then select that company when you book your tour. Jay will meet your group there. If you are bringing your own buggy, Jay will arrange a convenient meeting place with you.",
+  },
+  {
+    q: 'Where do we meet our guide?',
+    a: "If you're renting, Jay will meet your group at Jericho Adventures in Berlin or Northeast ATV Rentals in Gorham, depending on which company you're using. If you're bringing your own buggy, Jay will arrange a meeting place with you after you reserve your tour.",
+  },
+  {
+    q: 'How much does a tour cost?',
+    a: 'A three-hour guided tour is $200 per group of up to 10 buggies, with no additional tour charges. Bring your own buggy or arrange a rental separately. Photos taken along the way are included. The online calendar reserves your tour time; you pay Jay separately later.',
   },
   {
     q: 'What should I bring?',
-    a: "Dress for changing mountain weather and wear sturdy closed-toe shoes. We'll share a complete ride-day checklist when your tour is confirmed.",
+    a: "Arrive with a full tank of fuel. Dress for changing mountain weather and wear sturdy closed-toe shoes. We'll share a complete ride-day checklist when your tour is confirmed.",
   },
   {
     q: 'What happens if the weather turns?',
-    a: "We ride rain or shine. Come prepared for whatever the mountain throws at you — that's part of the adventure.",
+    a: 'Tours run rain or shine. North Country conditions can change quickly, so arrive prepared for all weather. In the rare event Jay must cancel because conditions are unsafe, you may choose to reschedule your tour or receive a refund.',
+  },
+  {
+    q: 'What is the cancellation and rescheduling policy?',
+    a: 'You may cancel or reschedule at no charge when you give us at least 72 hours’ notice. Changes requested within 72 hours of your tour are subject to availability. If you do not arrive for a reserved tour, prepayment may be required before you make another reservation. Call or text Jay as soon as your plans change.',
   },
 ];
 ---
 <BaseLayout
-  title="FAQ | Lemonski Tours — Guided ATV Tours, North Country NH"
+  title="FAQ | Lemonski Tours | Guided ATV Tours, North Country NH"
   description="Answers to common questions about Lemonski Tours' guided ATV rides in New Hampshire's North Country: experience needed, bringing vs. renting a buggy, what to bring, and weather."
 >
   <section class="page-head section">
@@ -43,7 +67,7 @@ const faqs = [
       ))}
     </div>
     <div class="page-cta">
-      <a class="button button-primary" href="/book">Add a guided tour <span aria-hidden="true">→</span></a>
+      <a class="button button-primary" href="/book">Book a guided ATV tour <span aria-hidden="true">→</span></a>
     </div>
   </section>
 

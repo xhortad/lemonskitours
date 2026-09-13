@@ -11,28 +11,22 @@ import rzrBlueTrail from '../assets/gallery/rzr-blue-trail.jpg';
 import fallTrail from '../assets/gallery/fall-trail-view.jpg';
 import waterfallTall from '../assets/gallery/waterfall-tall.jpg';
 import mountainRange from '../assets/gallery/mountain-range.jpg';
-import fallOverlook from '../assets/gallery/fall-mountain-overlook.jpg';
 import waterfallAutumn from '../assets/gallery/waterfall-autumn.jpg';
-import trailSideBuggy from '../assets/gallery/trail-side-buggy.jpg';
-import waterfallSummer from '../assets/gallery/waterfall-summer.jpg';
 
 const moments = [
   { img: rzrBlueTrail, alt: 'Blue Polaris RZR side-by-side buggy on a North Country dirt trail', caption: 'Your machine, ready to ride' },
   { img: fallTrail, alt: 'Gravel ATV trail winding through colorful fall forest toward New Hampshire mountains', caption: 'On the trail' },
   { img: waterfallTall, alt: 'Tall waterfall cascading down dark rock, framed by summer forest', caption: 'Waterfall stops' },
   { img: mountainRange, alt: "Layered North Country mountain range under dramatic clouds", caption: 'Ridgelines for miles' },
-  { img: fallOverlook, alt: "Wide mountain overlook with fall foliage beneath dramatic clouds", caption: 'Big overlooks' },
   { img: waterfallAutumn, alt: 'Waterfall over rocky ledges surrounded by early-autumn trees', caption: 'Backcountry falls' },
-  { img: trailSideBuggy, alt: 'Blue side-by-side buggy parked beside a wooded gravel trail', caption: 'Ready for the backcountry' },
-  { img: waterfallSummer, alt: 'Waterfall cascading down a rocky gorge surrounded by green forest', caption: 'Summer runs' },
 ];
 ---
 <BaseLayout
-  title="Gallery | Lemonski Tours — North Country ATV Trails"
+  title="Gallery | Lemonski Tours | North Country ATV Trails"
   description="See where a Lemonski guided ATV tour takes you: mountain views, backcountry trails, waterfalls, and fall color across New Hampshire's North Country."
-  image="/files/north-country-atv-hero.png"
+  image="/files/north-country-atv-hero.webp"
 >
-  <section class="page-head section">
+  <section class="page-head page-head-light section">
     <p class="eyebrow">On the trail</p>
     <h1 class="page-title">This is where the ride takes you.</h1>
   </section>
@@ -43,10 +37,10 @@ const moments = [
       <p>Winding backcountry trails, big overlooks, waterfalls, and North Country color beyond the pavement. Come see what a guided day out looks like.</p>
     </div>
     <figure class="trail-photo trail-photo-main">
-      <Image src={mountainVista} alt="North Country mountains in early fall color seen from a gravel trail" />
+      <Image src={mountainVista} width={1400} quality={78} alt="North Country mountains in early fall color seen from a gravel trail" />
     </figure>
     <figure class="trail-photo trail-photo-wide">
-      <Image src={pondSunset} alt="Backcountry beaver pond reflecting a pastel sunset sky, ringed by pines" />
+      <Image src={pondSunset} width={1400} quality={78} alt="Backcountry beaver pond reflecting a pastel sunset sky, ringed by pines" />
     </figure>
   </section>
 
@@ -54,12 +48,12 @@ const moments = [
     <div class="section-heading trail-moments-heading">
       <p class="eyebrow">Along the way</p>
       <h2 id="trail-moments-title">The stops are part of the story.</h2>
-      <p>Waterfalls, backcountry roads, and the moments in between — every ride brings something worth stopping for.</p>
+      <p>Waterfalls, backcountry roads, and the moments in between. Every ride brings something worth stopping for.</p>
     </div>
     <div class="trail-moments-grid">
       {moments.map((m) => (
         <figure class="moment moment-photo">
-          <Image src={m.img} alt={m.alt} />
+          <Image src={m.img} width={800} quality={76} alt={m.alt} />
           <figcaption>{m.caption}</figcaption>
         </figure>
       ))}
@@ -73,32 +67,33 @@ const moments = [
     </div>
     <div class="video-grid">
       <figure class="clip">
-        <video controls playsinline preload="metadata" poster="/videos/trail-ride-forest.jpg">
+        <video controls playsinline preload="none" poster="/videos/trail-ride-forest.jpg">
           <source src="/videos/trail-ride-forest.mp4" type="video/mp4" />
           Your browser does not support embedded video.
         </video>
         <figcaption>Flowing forest trail</figcaption>
       </figure>
       <figure class="clip">
-        <video controls playsinline preload="metadata" poster="/videos/trail-ride-backcountry.jpg">
+        <video controls playsinline preload="none" poster="/videos/trail-ride-backcountry.jpg">
           <source src="/videos/trail-ride-backcountry.mp4" type="video/mp4" />
           Your browser does not support embedded video.
         </video>
         <figcaption>Muddy backcountry lines</figcaption>
       </figure>
       <figure class="clip">
-        <video controls playsinline preload="metadata" poster="/videos/trail-ride-clearing.jpg">
+        <video controls playsinline preload="none" poster="/videos/trail-ride-clearing.jpg">
           <source src="/videos/trail-ride-clearing.mp4" type="video/mp4" />
           Your browser does not support embedded video.
         </video>
         <figcaption>Out to the clearing</figcaption>
       </figure>
     </div>
-  </section>
-
-  <section class="section page-cta-band">
-    <div class="page-cta">
-      <a class="button button-primary" href="/book">Add a guided tour <span aria-hidden="true">→</span></a>
+    <div class="gallery-booking-cta">
+      <div>
+        <p class="eyebrow">Ready to ride?</p>
+        <h3>Come see it for yourself.</h3>
+      </div>
+      <a class="button button-primary" href="/book">Book a guided ATV tour <span aria-hidden="true">→</span></a>
     </div>
   </section>
 </BaseLayout>

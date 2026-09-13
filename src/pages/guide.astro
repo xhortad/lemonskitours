@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import jayPortrait from '../assets/guide/jay-leeman-with-lemonski-buggy.jpg';
 ---
 <BaseLayout
-  title="Your Guide | Lemonski Tours — Local ATV Guide, North Country NH"
-  description="Meet your Lemonski Tours guide. A local who leads you across New Hampshire's North Country and the Ride the Wilds trails to the views and stories you'd miss on your own."
+  title="Your Guide | Lemonski Tours | Local ATV Guide, North Country NH"
+  description="Meet James 'Jay' Leeman, a lifelong North Country local with more than 25 years of experience riding the trails of northern New Hampshire."
 >
   <section class="page-head section">
     <p class="eyebrow">Meet your guide</p>
@@ -11,20 +13,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <section class="guide section">
-    <div class="guide-art" aria-hidden="true">
-      <img src="/logo-concepts/recommended-badge.svg" alt="" />
-      <span class="stamp">LOCAL<br>GUIDED<br>ADVENTURES</span>
+    <div class="guide-art guide-art-photo">
+      <Image class="guide-portrait" src={jayPortrait} width={900} quality={78} alt="James 'Jay' Leeman standing beside his branded Lemonski Tours buggy on a North Country trail" />
+      <span class="stamp">25+ YEARS<br>ON THESE<br>TRAILS</span>
     </div>
     <div class="guide-copy">
-      <p class="lead">Lemonski Tours is a guided experience you can add to any ride — whether you're renting locally or bringing your own machine.</p>
-      <p>You drive while an easygoing local guide leads you to the good stuff, shares the stories behind the trail, and shapes the day around your group. This isn't a bus tour and it isn't a set script — it's your ride, with someone who knows where the views, the waterfalls, and the worthwhile stops are.</p>
-      <p>Every tour is built around your crew and your comfort level, from first-timers to seasoned riders. Tell us the kind of day you want, and we'll make it happen.</p>
+      <p class="eyebrow">James “Jay” Leeman · also known as Lemonski</p>
+      <p class="lead">Jay has lived in New Hampshire's North Country all his life and has spent more than 25 years riding its trails.</p>
+      <p>Years ago, Jay led tours through the area and discovered how much he enjoyed helping people feel at home on the trail. Lemonski Tours (pronounced “lee-mone-ski”) is his way of getting back to it. He shares the places, stories, and local knowledge that turn a ride into a day people remember.</p>
+      <p>Before every tour, Jay asks each rider how comfortable they feel behind the wheel. He sets a pace that works for the whole group, keeps everyone together, and is always ready with a reminder or a little reassurance. Nobody gets left trying to figure it out alone.</p>
+      <p>Easygoing, patient, funny, and always up for an adventure, Jay goes out of his way for the people riding with him. If your group wants a photo, a break, or a few minutes to hear the story behind a stop, he'll make the time.</p>
       <blockquote>
         “My favorite part is showing someone a place they never would have found on their own.”
-        <cite>— James Leeman, your local guide</cite>
+        <cite>Jay “Lemonski” Leeman, your local guide</cite>
       </blockquote>
-      <!-- TODO: expand with James's real bio — years riding the North Country,
-           favorite trails, what makes a Lemonski tour different. -->
       <div class="page-cta">
         <a class="button button-primary" href="/book">Book a ride with your guide <span aria-hidden="true">→</span></a>
       </div>

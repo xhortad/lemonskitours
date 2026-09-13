@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import trailPhoto from '../assets/gallery/trail-side-buggy.jpg';
+---
+<BaseLayout
+  title="Guided ATV Tours in Berlin, NH | Lemonski Tours"
+  description="Explore Berlin, New Hampshire and nearby North Country trails with Jay, a lifelong local guide with more than 25 years of riding experience. Three-hour private group tours are $200."
+>
+  <section class="page-head section">
+    <p class="eyebrow">Berlin, New Hampshire</p>
+    <h1 class="page-title">Guided ATV tours in Berlin, NH</h1>
+  </section>
+
+  <article class="location-page section">
+    <div class="location-copy">
+      <p class="eyebrow">Ride with a local</p>
+      <h2>Spend less time choosing turns and more time enjoying the trail.</h2>
+      <p>Berlin sits beside Jericho Mountain State Park and the connected Ride the Wilds trail system. It is a natural starting point for riders who want mountain scenery, wooded trails, and a local guide who knows the area.</p>
+      <p>James “Jay” Leeman has lived in the North Country all his life and has ridden these trails for more than 25 years. You drive your own or separately rented buggy while Jay leads at a comfortable pace, keeps the group together, and makes time for photos and breaks.</p>
+      <h3>Meeting your guide in Berlin</h3>
+      <p>If you rent from <a href="https://www.jerichoadventures.com/" target="_blank" rel="noopener">Jericho Adventures</a>, tell us when you reserve your tour and Jay will meet you there. If you bring your own legal, trail-ready machine, Jay will arrange a convenient meeting place with you.</p>
+      <ul class="location-facts">
+        <li><strong>Tour length</strong><span>Three hours</span></li>
+        <li><strong>Price</strong><span>$200 per group</span></li>
+        <li><strong>Group size</strong><span>Up to 10 buggies</span></li>
+        <li><strong>Schedule</strong><span>Saturdays and Sundays at 9 am and 2 pm Eastern Time</span></li>
+      </ul>
+      <div class="location-actions">
+        <a class="button button-primary" href="/book">Book a Berlin ATV tour <span aria-hidden="true">→</span></a>
+        <a class="text-link" href="/faq">Read the tour FAQ <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <Image src={trailPhoto} width={1000} quality={76} alt="A side-by-side buggy on a wooded trail near Berlin, New Hampshire" loading="eager" />
+  </article>
+</BaseLayout>

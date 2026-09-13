@@ -1,9 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import jayPortrait from '../assets/guide/jay-leeman-with-lemonski-buggy.jpg';
+import trailSideBuggy from '../assets/gallery/trail-side-buggy.jpg';
+import fallOverlook from '../assets/gallery/fall-mountain-overlook.jpg';
+import waterfallSummer from '../assets/gallery/waterfall-summer.jpg';
+import bookingBuggy from '../../photos/6113.JPEG';
 ---
 <BaseLayout
   title="Lemonski Tours | Guided ATV Tours in Berlin, NH & the North Country"
-  description="Guided ATV & buggy tours across New Hampshire's North Country and the Ride the Wilds trails — Berlin, Gorham, Milan & beyond. Bring your own buggy or rent locally, then follow a local guide to the best views and stories."
+  description="Guided ATV and buggy tours across New Hampshire's North Country and the Ride the Wilds trails, including Berlin, Gorham, Milan, and beyond. Bring your own buggy or rent locally, then follow a local guide to the best views and stories."
 >
   <section class="hero">
     <div class="hero-bg" role="img" aria-label="ATV riders overlooking New Hampshire's North Country mountains"></div>
@@ -11,10 +17,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="hero-content">
       <p class="eyebrow light">Guided ATV tours · Berlin, NH &amp; the Ride the Wilds trails</p>
       <h1>Don't just ride.<br><em>Know the trail.</em></h1>
-      <p class="hero-copy">Bring your own buggy or rent one locally — either way, add a Lemonski tour and follow a local guide across the North Country's Ride the Wilds trails, from Berlin and Gorham to the views and stories you'd miss on your own.</p>
+      <p class="hero-copy">Bring your own buggy or rent one locally. Then follow a Lemonski guide across the North Country's Ride the Wilds trails to the views and stories you might miss on your own.</p>
       <div class="hero-actions">
-        <a class="button button-primary" href="/book">Add a guided tour <span aria-hidden="true">→</span></a>
-        <a class="text-link light-link" href="/guide">Meet your guide <span aria-hidden="true">↓</span></a>
+        <a class="button button-primary" href="/book">Book a guided ATV tour <span aria-hidden="true">→</span></a>
+        <a class="text-link light-link" href="#guide">Meet your guide <span aria-hidden="true">↓</span></a>
       </div>
     </div>
     <div class="hero-proof" aria-label="Tour highlights">
@@ -30,7 +36,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2>A ride you'll still be talking about next year.</h2>
     </div>
     <div class="intro-copy">
-      <p>Already own a buggy? Bring it. Visiting and need a machine? Rent one from a local ATV shop. Either way, add a Lemonski guided tour and make it a real North Country adventure.</p>
+      <p>Already own a buggy? Bring it. Visiting and need a machine? Reserve one with <a href="https://www.jerichoadventures.com/" target="_blank" rel="noopener">Jericho Adventures</a> in Berlin or <a href="https://northeastatvrentals.com/" target="_blank" rel="noopener">Northeast ATV Rentals</a> in Gorham. Then book your Lemonski guided tour, tell us which company you're using, and Jay will meet you there.</p>
       <p>You stay behind the wheel while your local guide leads the way. Every tour is shaped around your crew, experience, and the kind of day you want.</p>
     </div>
   </section>
@@ -38,39 +44,56 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="benefits section">
     <article class="benefit-card">
       <span class="card-number">01</span>
-      <div class="line-icon" aria-hidden="true">⌁</div>
-      <h3>Ride the good stuff</h3>
-      <p>Drive your rented buggy and follow a local to scenic trails, hidden lookouts, and worthwhile stops.</p>
+      <Image class="benefit-image" src={trailSideBuggy} width={900} quality={78} alt="A side-by-side buggy ready to ride on a wooded North Country trail" />
+      <div class="benefit-card-body">
+        <h3>Ride the good stuff</h3>
+        <p>Drive your rented buggy and follow a local to scenic trails, hidden lookouts, and worthwhile stops.</p>
+      </div>
     </article>
     <article class="benefit-card featured">
       <span class="card-number">02</span>
-      <div class="line-icon" aria-hidden="true">◎</div>
-      <h3>Stay in the moment</h3>
-      <p>Your guide captures photos along the way, so your whole group makes it into the memory.</p>
+      <Image class="benefit-image" src={fallOverlook} width={900} quality={78} alt="A wide North Country mountain overlook surrounded by fall color" />
+      <div class="benefit-card-body">
+        <h3>Stay in the moment</h3>
+        <p>Your guide captures photos along the way, so your whole group makes it into the memory.</p>
+      </div>
     </article>
     <article class="benefit-card">
       <span class="card-number">03</span>
-      <div class="line-icon" aria-hidden="true">◇</div>
-      <h3>Add on the adventure</h3>
-      <p>Own a buggy or renting locally — just add a personal guide so your time on the trails really counts.</p>
+      <Image class="benefit-image" src={waterfallSummer} width={900} quality={78} alt="A backcountry waterfall surrounded by green North Country forest" />
+      <div class="benefit-card-body">
+        <h3>Make the ride count</h3>
+        <p>Bring your own buggy or rent one locally. Add a personal guide and spend your trail time reaching places worth remembering.</p>
+      </div>
     </article>
   </section>
 
   <section class="guide section" id="guide">
-    <div class="guide-art" aria-hidden="true">
-      <img src="/logo-concepts/recommended-badge.svg" alt="" />
-      <span class="stamp">LOCAL<br>GUIDED<br>ADVENTURES</span>
+    <div class="guide-art guide-art-photo">
+      <Image class="guide-portrait" src={jayPortrait} width={900} quality={78} alt="Jay Leeman standing beside his Lemonski Tours buggy on a North Country trail" />
+      <span class="stamp">25+ YEARS<br>ON THESE<br>TRAILS</span>
     </div>
     <div class="guide-copy">
       <p class="eyebrow">Meet your guide</p>
       <h2>This isn't a bus tour. It's personal.</h2>
-      <p class="lead">Lemonski Tours is a guided experience you can add to any ride — whether you're renting locally or bringing your own machine.</p>
-      <p>You drive while an easygoing local guide leads you to the good stuff, shares the stories behind the trail, and shapes the day around your group.</p>
+      <p class="lead">James “Jay” Leeman has lived in the North Country all his life and has spent more than 25 years riding its trails.</p>
+      <p>You drive while Jay sets a comfortable pace, keeps the whole group together, and makes time for photos, breaks, and the stories behind the trail.</p>
       <blockquote>
         “My favorite part is showing someone a place they never would have found on their own.”
-        <cite>— James Leeman, your local guide</cite>
+        <cite>Jay “Lemonski” Leeman, your local guide</cite>
       </blockquote>
-      <a class="text-link" href="/guide">More about your guide <span aria-hidden="true">→</span></a>
+      <details class="guide-disclosure">
+        <summary>
+          <span class="label-more">See more about your guide</span>
+          <span class="label-less">See less</span>
+          <span class="disclosure-icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="guide-disclosure-content">
+          <p>Jay has lived in New Hampshire's North Country all his life. Years ago, he led tours through the area and discovered how much he enjoyed helping people feel at home on the trail. Lemonski Tours (pronounced “lee-mone-ski”) is his way of getting back to it.</p>
+          <p>Before every ride, Jay asks each person how comfortable they feel behind the wheel. He sets a pace that works for the whole group, keeps everyone together, and is always ready with a reminder or a little reassurance.</p>
+          <p>Easygoing, patient, funny, and always up for an adventure, Jay makes time for the things that turn a ride into a memory: a photo, a break, or the story behind a stop.</p>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -99,9 +122,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <section class="audience">
-    <div>
-      <p class="eyebrow light">Made for real people</p>
+    <div class="audience-copy">
+      <p class="eyebrow">Made for real people</p>
       <h2>You don't need to be an expert. You just need to want an adventure.</h2>
+      <p>First time on the trails or riding with an experienced group? Jay checks in with everyone, keeps a comfortable pace, and makes sure your group stays together.</p>
+      <a class="button button-primary" href="/book">See tour details and book <span aria-hidden="true">→</span></a>
     </div>
     <div class="audience-list">
       <span>Families</span>
@@ -111,45 +136,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <section class="reviews section" id="reviews">
-    <div class="section-heading centered">
-      <p class="eyebrow">Riders &amp; reviews</p>
-      <h2>Ride with us, then tell folks how it went.</h2>
+  <section class="trust-band section" aria-labelledby="trust-title">
+    <div class="trust-heading">
+      <p class="eyebrow light">Why ride with Lemonski</p>
+      <h2 id="trust-title">Local knowledge. Your kind of day.</h2>
     </div>
-    <p class="reviews-intro">Lemonski Tours is a young, local operation — every honest review helps the next rider find us. Took a tour already? It takes 30 seconds to leave a review on Google, and it means the world.</p>
-    <div class="reviews-cta">
-      <a class="button button-primary" href="https://g.page/r/CeTLKK_-FrhQEAE/review" target="_blank" rel="noopener">Leave a review on Google <span aria-hidden="true">★</span></a>
-    </div>
-
-    <!-- REVIEW SHOWCASE — hidden until real reviews exist. Fill each card with a
-         genuine quote + name, then remove the `hidden` attribute below. -->
-    <div class="review-grid" hidden>
-      <figure class="review-card">
-        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote>Real review quote goes here.</blockquote>
-        <figcaption>— First name L., Town</figcaption>
-      </figure>
-      <figure class="review-card">
-        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote>Real review quote goes here.</blockquote>
-        <figcaption>— First name L., Town</figcaption>
-      </figure>
-      <figure class="review-card">
-        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote>Real review quote goes here.</blockquote>
-        <figcaption>— First name L., Town</figcaption>
-      </figure>
+    <div class="trust-facts">
+      <div><strong>Lifetime</strong><span>North Country local</span></div>
+      <div><strong>25+ years</strong><span>riding these trails</span></div>
+      <div><strong>Up to 10</strong><span>buggies in your group</span></div>
+      <div><strong>Included</strong><span>photos along the way</span></div>
     </div>
   </section>
 
-  <section class="booking" id="book">
+  <section class="booking booking-home" id="book">
     <div class="booking-copy">
       <p class="eyebrow light">Let's plan your ride</p>
-      <h2>Pick a time and let's ride.</h2>
-      <p>We run two tours every Saturday and Sunday — a morning tour at <strong>9 am</strong> and an afternoon tour at <strong>2 pm</strong>. Tours starting at <strong>$200</strong>.</p>
-      <div class="page-cta">
-        <a class="button button-primary" href="/book">Book your tour <span aria-hidden="true">→</span></a>
+      <h2>Choose a time. Let's ride.</h2>
+      <p>We run two three-hour tours every Saturday and Sunday. Choose a morning tour at <strong>9 am</strong> or an afternoon tour at <strong>2 pm</strong>. Each guided tour is <strong>$200 per group of up to 10 buggies</strong>.</p>
+      <div class="booking-home-action">
+        <a class="button button-outline-light" href="/book">View available times <span aria-hidden="true">→</span></a>
       </div>
     </div>
+    <figure class="booking-home-image">
+      <Image src={bookingBuggy} width={900} quality={78} alt="A blue side-by-side buggy ready for a North Country trail ride" />
+    </figure>
   </section>
 </BaseLayout>
