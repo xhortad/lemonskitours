@@ -1,0 +1,190 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const {
+  title,
+  description,
+  image = '/files/north-country-atv-hero.webp',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const imageURL = new URL(image, Astro.site);
+const currentPath = Astro.url.pathname;
+
+const nav = [
+  { href: '/#experience', label: 'The ride' },
+  { href: '/guide', label: 'Your guide' },
+  { href: '/gallery', label: 'Gallery' },
+  { href: '/faq', label: 'FAQ' },
+];
+
+const isCurrent = (href: string) => href === '/#experience'
+  ? currentPath === '/'
+  : currentPath === href;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={description} />
+  <title>{title}</title>
+  <link rel="canonical" href={canonicalURL} />
+  <link rel="icon" href="/logo-concepts/recommended-badge.svg" type="image/svg+xml" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lemonski Tours" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:image" content={imageURL} />
+  <meta property="og:image:alt" content="ATV riders overlooking New Hampshire's North Country mountains" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={imageURL} />
+
+  <!-- Local business structured data (schema.org). -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": ["TravelAgency", "LocalBusiness"],
+    "@id": "https://lemonski-tours.com/#business",
+    "name": "Lemonski Tours",
+    "slogan": "Ride with a local",
+    "telephone": "+1-603-703-3164",
+    "description": "Guided ATV and buggy tours across New Hampshire's North Country and the Ride the Wilds trail network. Bring your own buggy or rent one locally, then follow a local guide to the best views and stories.",
+    "url": "https://lemonski-tours.com/",
+    "image": "https://lemonski-tours.com/files/north-country-atv-hero.webp",
+    "logo": "https://lemonski-tours.com/files/lemondskis_logo_hires.png",
+    "priceRange": "$$",
+    "currenciesAccepted": "USD",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressRegion": "NH",
+      "postalCode": "03570",
+      "addressCountry": "US"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 44.4687, "longitude": -71.1851 },
+    "areaServed": [
+      { "@type": "City", "name": "Berlin, NH" },
+      { "@type": "City", "name": "Gorham, NH" },
+      { "@type": "City", "name": "Milan, NH" },
+      { "@type": "City", "name": "Dummer, NH" },
+      { "@type": "City", "name": "Errol, NH" },
+      { "@type": "City", "name": "Stark, NH" },
+      { "@type": "AdministrativeArea", "name": "Coös County, NH" }
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "09:00", "closes": "17:00" }
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "name": "Morning three-hour guided ATV tour (9 am)", "description": "A three-hour Saturday or Sunday morning tour for one group of up to 10 buggies, with no additional tour charges. Drive your own or a separately rented buggy while a local guide leads the ride. Photos included.", "priceCurrency": "USD", "price": "200" },
+      { "@type": "Offer", "name": "Afternoon three-hour guided ATV tour (2 pm)", "description": "A three-hour Saturday or Sunday afternoon tour for one group of up to 10 buggies, with no additional tour charges. Follow a local guide to the best views and trail stories. Buggy rental is separate; photos are included.", "priceCurrency": "USD", "price": "200" },
+      { "@type": "Offer", "name": "Private group ATV tour", "description": "A three-hour guided tour for a group of up to 10 buggies, shaped around your crew, skill level, and the kind of day you want.", "priceCurrency": "USD", "price": "200" }
+    ]
+  })} />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="/" aria-label="Lemonski Tours home">
+      <img src="/logo-concepts/recommended-horizontal.svg" alt="Lemonski Tours. Ride with a local." />
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Open navigation</span>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      {nav.map((item) => <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>)}
+      <a class="nav-cta" href="/book" aria-current={currentPath === '/book' ? 'page' : undefined}>Book a guided ATV tour</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <slot />
+  </main>
+
+  <aside class="review-banner" aria-labelledby="review-banner-title">
+    <div>
+      <p class="eyebrow">Rode with Jay?</p>
+      <h2 id="review-banner-title">Help another rider plan their adventure.</h2>
+    </div>
+    <a class="button button-primary" href="https://g.page/r/CeTLKK_-FrhQEAE/review" target="_blank" rel="noopener">Leave a Google review <span aria-hidden="true">→</span></a>
+  </aside>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="/logo-concepts/recommended-horizontal.svg" alt="Lemonski Tours. Ride with a local." />
+      <p>Guided ATV tours in North Country, NH. Bring your own buggy or rent locally.</p>
+    </div>
+    <div class="footer-links">
+      {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+      <a href="/book">Book a guided ATV tour</a>
+      <a href="tel:+16037033164">Call or text Jay</a>
+      <a href="https://g.page/r/CeTLKK_-FrhQEAE/review" target="_blank" rel="noopener">Leave a Google review</a>
+    </div>
+    <div class="footer-locations" aria-label="Tour locations">
+      <strong>Explore local tours</strong>
+      <a href="/guided-atv-tours-berlin-nh">Berlin, NH ATV tours</a>
+      <a href="/guided-atv-tours-gorham-nh">Gorham, NH ATV tours</a>
+      <a href="/ride-the-wilds-guided-tours">Ride the Wilds guided tours</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Lemonski Tours</span>
+      <span>Ride with a local.</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('#site-nav');
+
+    if (menuButton && navigation) {
+      menuButton.addEventListener('click', () => {
+        const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', String(!isOpen));
+        const menuLabel = menuButton.querySelector('.sr-only');
+        if (menuLabel) menuLabel.textContent = isOpen ? 'Open navigation' : 'Close navigation';
+        navigation.classList.toggle('open', !isOpen);
+        document.body.classList.toggle('menu-open', !isOpen);
+      });
+
+      navigation.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          menuButton.setAttribute('aria-expanded', 'false');
+          const menuLabel = menuButton.querySelector('.sr-only');
+          if (menuLabel) menuLabel.textContent = 'Open navigation';
+          navigation.classList.remove('open');
+          document.body.classList.remove('menu-open');
+        });
+      });
+    }
+
+    document.querySelectorAll('.accordion details').forEach((detail) => {
+      detail.addEventListener('toggle', () => {
+        if (!(detail as HTMLDetailsElement).open) return;
+        document.querySelectorAll('.accordion details').forEach((other) => {
+          if (other !== detail) other.removeAttribute('open');
+        });
+      });
+    });
+
+    const yearEl = document.querySelector('#year');
+    if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

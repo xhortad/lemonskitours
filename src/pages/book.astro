@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Book a Tour | Lemonski Tours | Guided ATV Rides, North Country NH"
+  description="Book a three-hour guided ATV tour with Lemonski Tours for $200 per group. Tours run Saturdays and Sundays at 9 am and 2 pm across New Hampshire's North Country."
+>
+  <section class="page-head page-head-light section">
+    <p class="eyebrow">Let's plan your ride</p>
+    <h1 class="page-title">Pick a time and let's ride.</h1>
+    <p class="page-lede">We run two tours every Saturday and Sunday at <strong>9 am</strong> and <strong>2 pm Eastern Time</strong>. Google Calendar shows the appointment times in your device's local time, so check the time zone above the available slots.</p>
+  </section>
+
+  <section class="booking" id="book">
+    <div class="booking-copy">
+      <div class="booking-note">
+        <strong>$200 per group</strong>
+        <span>Three hours for up to 10 buggies. Photos are included. Buggy rental is separate.</span>
+      </div>
+      <div class="meeting-note">
+        <strong>Renting a buggy?</strong>
+        <p>Reserve with a local rental company, then choose that location when you book. Jay will meet you there.</p>
+        <ul>
+          <li><a href="https://www.jerichoadventures.com/" target="_blank" rel="noopener">Jericho Adventures</a></li>
+          <li><a href="https://northeastatvrentals.com/" target="_blank" rel="noopener">Northeast ATV Rentals</a></li>
+        </ul>
+        <p>Already have a buggy? Jay will arrange a meeting place with you.</p>
+      </div>
+      <details class="booking-fine-print">
+        <summary>Payment, changes, and weather <span aria-hidden="true">+</span></summary>
+        <div>
+          <p>Reserve now and pay Jay separately later. Changes are free with at least 72 hours' notice.</p>
+          <p>Tours run rain or shine. If Jay must cancel for safety, you may reschedule or receive a refund.</p>
+        </div>
+      </details>
+      <details class="booking-fine-print">
+        <summary>Before you ride <span aria-hidden="true">+</span></summary>
+        <div>
+          <p>If you are renting, follow your rental company's driver, passenger, equipment, and safety requirements.</p>
+          <p>If you bring your own machine, make sure the riders and machine meet all legal trail requirements. Arrive with a full tank and clothing for changing weather.</p>
+        </div>
+      </details>
+      <p class="booking-help"><strong>Questions before you book?</strong> Call or text Jay at <a href="tel:+16037033164">(603) 703-3164</a>.</p>
+    </div>
+    <!-- Google Calendar Appointment Scheduling -->
+    <iframe class="booking-scheduler" title="Book a Lemonski Tour. Appointment times are converted to your local time zone." src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3ZP4ad_aijStud_D6EPzWhr4XXO-S8nPiIhl1JKIZx8d_qcgxACk1LOgR_JJ25uc36ZOOp3UpU?gv=true" style="border:0" width="100%" height="900" frameborder="0"></iframe>
+  </section>
+</BaseLayout>

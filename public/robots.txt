@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Make the public site available to major search and answer engines.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+Sitemap: https://lemonski-tours.com/sitemap.xml

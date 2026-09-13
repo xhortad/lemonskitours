@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import waterfallPhoto from '../assets/gallery/waterfall-summer.jpg';
+---
+<BaseLayout
+  title="Ride the Wilds Guided ATV Tours | Lemonski Tours"
+  description="Experience New Hampshire's Ride the Wilds trail network with a lifelong North Country guide. Drive your own or rented buggy on a three-hour private group tour."
+>
+  <section class="page-head section">
+    <p class="eyebrow">New Hampshire's North Country</p>
+    <h1 class="page-title">Ride the Wilds guided ATV tours</h1>
+  </section>
+
+  <article class="location-page section">
+    <div class="location-copy">
+      <p class="eyebrow">More than a route on a map</p>
+      <h2>See the trail through the eyes of someone who grew up here.</h2>
+      <p>Ride the Wilds connects communities and riding areas across New Hampshire's North Country. With so many possible turns, a guide can help visiting riders make better use of a short day on the trail.</p>
+      <p>Jay has ridden North Country trails for more than 25 years. He chooses each outing around the group's comfort level, current trail conditions, and the kind of experience you want. Stops and routes may change, which helps every tour fit the day rather than follow a rigid script.</p>
+      <h3>Bring a buggy or rent one locally</h3>
+      <p>Lemonski Tours provides the guide, not the machine. Bring your own legal, trail-ready ATV or side-by-side, or reserve one through a local rental company in Berlin or Gorham. Tell us where you are renting when you book and Jay will meet you there.</p>
+      <ul class="location-facts">
+        <li><strong>Experience</strong><span>First-timers and experienced riders are welcome</span></li>
+        <li><strong>Pace</strong><span>Comfortable and shaped around your group</span></li>
+        <li><strong>Weather</strong><span>Tours run rain or shine unless conditions are unsafe</span></li>
+        <li><strong>Photos</strong><span>Pictures along the way are included</span></li>
+      </ul>
+      <div class="location-actions">
+        <a class="button button-primary" href="/book">Book a guided ATV tour <span aria-hidden="true">→</span></a>
+        <a class="text-link" href="/gallery">See the trails <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <Image src={waterfallPhoto} width={1000} quality={76} alt="A waterfall stop in New Hampshire's North Country" loading="eager" />
+  </article>
+</BaseLayout>

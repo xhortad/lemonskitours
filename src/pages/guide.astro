@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import jayPortrait from '../assets/guide/jay-leeman-with-lemonski-buggy.jpg';
+---
+<BaseLayout
+  title="Your Guide | Lemonski Tours | Local ATV Guide, North Country NH"
+  description="Meet James 'Jay' Leeman, a lifelong North Country local with more than 25 years of experience riding the trails of northern New Hampshire."
+>
+  <section class="page-head section">
+    <p class="eyebrow">Meet your guide</p>
+    <h1 class="page-title">Ride with a local who knows the trail.</h1>
+  </section>
+
+  <section class="guide section">
+    <div class="guide-art guide-art-photo">
+      <Image class="guide-portrait" src={jayPortrait} width={900} quality={78} alt="James 'Jay' Leeman standing beside his branded Lemonski Tours buggy on a North Country trail" />
+      <span class="stamp">25+ YEARS<br>ON THESE<br>TRAILS</span>
+    </div>
+    <div class="guide-copy">
+      <p class="eyebrow">James “Jay” Leeman · also known as Lemonski</p>
+      <p class="lead">Jay has lived in New Hampshire's North Country all his life and has spent more than 25 years riding its trails.</p>
+      <p>Years ago, Jay led tours through the area and discovered how much he enjoyed helping people feel at home on the trail. Lemonski Tours (pronounced “lee-mone-ski”) is his way of getting back to it. He shares the places, stories, and local knowledge that turn a ride into a day people remember.</p>
+      <p>Before every tour, Jay asks each rider how comfortable they feel behind the wheel. He sets a pace that works for the whole group, keeps everyone together, and is always ready with a reminder or a little reassurance. Nobody gets left trying to figure it out alone.</p>
+      <p>Easygoing, patient, funny, and always up for an adventure, Jay goes out of his way for the people riding with him. If your group wants a photo, a break, or a few minutes to hear the story behind a stop, he'll make the time.</p>
+      <blockquote>
+        “My favorite part is showing someone a place they never would have found on their own.”
+        <cite>Jay “Lemonski” Leeman, your local guide</cite>
+      </blockquote>
+      <div class="page-cta">
+        <a class="button button-primary" href="/book">Book a ride with your guide <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
