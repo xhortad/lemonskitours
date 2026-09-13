@@ -10,6 +10,7 @@ dist/
 # Local scratch / exports (not part of the site)
 tmp/
 output/
+resources/
 photos/
 business-card/
 files/
