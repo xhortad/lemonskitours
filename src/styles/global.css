@@ -556,8 +556,14 @@ cite { display: block; margin-top: .8rem; color: var(--muted); font-size: .75rem
 .booking-home h2 { max-width: 820px; text-wrap: balance; }
 .booking-home-action { display: flex; justify-content: flex-start; margin-top: 2rem; }
 .booking-home-action .button { min-width: min(100%, 310px); }
-.booking-home-image { height: clamp(360px, 38vw, 520px); margin: 0; overflow: hidden; }
-.booking-home-image img { width: 100%; height: 100%; object-fit: cover; object-position: 54% 50%; }
+.booking-home-image {
+  width: min(100%, 480px);
+  aspect-ratio: 3 / 4;
+  justify-self: end;
+  margin: 0;
+  overflow: hidden;
+}
+.booking-home-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .booking-note {
   max-width: 520px;
   display: flex;
@@ -746,7 +752,7 @@ footer {
   .hero-proof { right: 1rem; left: 1rem; }
   .intro, .guide, .audience, .faq, .booking { grid-template-columns: 1fr; }
   .booking-home-action { justify-content: flex-start; }
-  .booking-home-image { height: min(72vw, 500px); }
+  .booking-home-image { width: min(100%, 480px); height: auto; justify-self: center; }
   .booking .booking-scheduler { position: static; order: -1; }
   .location-page { grid-template-columns: 1fr; }
   .location-page > img { min-height: 460px; }
